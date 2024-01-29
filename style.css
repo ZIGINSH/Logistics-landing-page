@@ -1,0 +1,58 @@
+body {
+    background: transparent url("truck.jpeg") no-repeat fixed center;
+    background-size: cover;
+}
+
+#nav {
+    text-align: center;
+    background-color: transparent;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+}
+
+#nav li {
+    display: inline-flex;
+    padding: 15px;
+    font-size: 32px;
+}
+
+#nav a {
+    text-decoration: none;
+    padding: 0 30px;
+    color: white;
+    font-weight: bold;
+}
+
+#nav li:hover {
+    background-color: orange;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+@media screen and (max-width: 700px) {
+    .flex-container {
+    flex-direction: column;
+    }  
+}
+
+.paragraph {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-wrap: wrap;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
