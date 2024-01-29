@@ -1,60 +1,116 @@
 body {
-    font-family: monospace;
-    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
     margin: 0;
+    width: 100vw;
+    height: 100vh;
     background-image: url("truck.jpeg");
-    background-size: auto;
     background-repeat: no-repeat;
-    color: white;
+    background-size: cover;
+    color: black;
   }
   
-  .navbar { grid-area: header; }
-  .hero { grid-area: moto; }
-  .item3 { grid-area: col1; }
-  .item4 { grid-area: col2; }
-  .item5 { grid-area: col3; }
-  .item6 { grid-area: col4; }
-  .item7 { grid-area: col5; }
-  .item8 { grid-area: img1; }
-  .item9 { grid-area: txt1; }
-  .item10 {grid-area: txt2; }
-  .item11 {grid-area: img2; }
-  .item12 {grid-area: img3; }
-  .item13 {grid-area: txt3; }
-  .item14 {grid-area: footer; }
+.navbar { 
+    grid-area: header;
+    position: sticky;
+    top: 0;
+}
+
+.moto { 
+    grid-area: moto;
+    color: white;
+}
+
+.item3 { 
+    grid-area: col1;
+}
+
+.item4 { 
+    grid-area: col2;
+}
+
+.item5 { 
+    grid-area: col3; 
+}
+
+.item6 { 
+    grid-area: col4; 
+}
+
+.item7 { 
+    grid-area: col5; 
+}
+
+.item8 { 
+    grid-area: img1;
+}
+
+.item9 { 
+    grid-area: txt1;
+    background-color: red;
+    color: white;
+    resize: horizontal;
+    height: 400px;
+    padding: 3px;
+}
+
+.item10 {
+    grid-area: txt2; 
+}
+
+.item11 {
+    grid-area: img2; 
+}
+
+.item12 {
+    grid-area: img3; 
+}
+
+.item13 {
+    grid-area: txt3; 
+}
+
+.item14 {
+    grid-area: footer; 
+}
   
-  .grid-container {
+.grid-container {
     display: grid;
     grid-template-areas:
       'header header header header header'
       'moto moto moto moto moto'
-      'col1 col2 col3 col4 col5  '
+      'col1 col2 col3 col4 col5'
       'img1 img1 img1 txt1 txt1'
       'txt2 txt2 img2 img2 img2'
       'img3 img3 img3 txt3 txt3'
       'footer footer footer footer footer';
-    gap: 0px;
+    gap: 0;  
     background-color: transparent;
+    font-size: 18px;
     padding: 0;
-    margin: 0 ;
-    color: white;
+    margin: 0;
   }
   
-  .navlist {
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navlist {
     display: flex;
     justify-content: center;
     text-align: center; 
     margin: 0;
   }
   
-  .navlist li:first-child {padding-left: 0;}
+.navlist li:first-child {padding-left: 0;}
   
-  .navlist li {
+.navlist li {
     padding: 40px;
     list-style-type: none;
   }
   
-  .moto {
+.moto {
     background-color: transparent;
     display: flex;
     justify-content: center;
@@ -65,26 +121,26 @@ body {
     height: 100vh ; 
   }
   
-  h1 {
+h1 {
     font-size: 70px;
   }
   
-  .item3, .item4, .item5, .item6, .item7 {  
+.item3, .item4, .item5, .item6, .item7 {  
     width: 20vw; 
-  padding: 40px 5px;
+    padding: 40px 5px;
     text-align: center;
   }
   
-  .blank {  
+.blank {  
     width: 20vw; 
 }
   
-  .item8 { 
+.item8 { 
     max-width: 100%; 
-    height: auto; 
+    height: auto;
   }
   
-  .item9 , .item10, .item13  {
+.item9 , .item10, .item13  {
     display: flex;
     justify-content: center;
     flex-direction: column;
