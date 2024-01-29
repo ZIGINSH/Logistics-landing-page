@@ -1,58 +1,93 @@
 body {
-    background: transparent url("truck.jpeg") no-repeat fixed center;
-    background-size: cover;
-}
-
-#nav {
-    text-align: center;
+    font-family: monospace;
     background-color: transparent;
-    list-style-type: none;
     margin: 0;
+    background-image: url("truck.jpeg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  
+  .navbar { grid-area: header; }
+  .hero { grid-area: moto; }
+  .item3 { grid-area: col1; }
+  .item4 { grid-area: col2; }
+  .item5 { grid-area: col3; }
+  .item6 { grid-area: col4; }
+  .item7 { grid-area: col5; }
+  .item8 { grid-area: img1; }
+  .item9 { grid-area: txt1; }
+  .item10 {grid-area: txt2; }
+  .item11 {grid-area: img2; }
+  .item12 {grid-area: img3; }
+  .item13 {grid-area: txt3; }
+  .item14 {grid-area: footer; }
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header'
+      'moto moto moto moto moto'
+      'col1 col2 col3 col4 col5  '
+      'img1 img1 img1 txt1 txt1'
+      'txt2 txt2 img2 img2 img2'
+      'img3 img3 img3 txt3 txt3'
+      'footer footer footer footer footer';
+    gap: 0px;
+    background-color: transparent;
     padding: 0;
-    left: 0;
-    top: 0;
-    width: 100%;
-    overflow: hidden;
-    position: fixed;
-}
-
-#nav li {
-    display: inline-flex;
-    padding: 15px;
-    font-size: 32px;
-}
-
-#nav a {
-    text-decoration: none;
-    padding: 0 30px;
+    margin: 0 ;
     color: white;
-    font-weight: bold;
-}
-
-#nav li:hover {
-    background-color: orange;
-}
-
-.flex-container {
+  }
+  
+  .navlist {
     display: flex;
-    flex-flow: column wrap;
-}
-
-@media screen and (max-width: 700px) {
-    .flex-container {
+    justify-content: center;
+    text-align: center; 
+    margin: 0;
+  }
+  
+  .navlist li:first-child {padding-left: 0;}
+  
+  .navlist li {
+    padding: 40px;
+    list-style-type: none;
+  }
+  
+  .moto {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
     flex-direction: column;
-    }  
-}
-
-.paragraph {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 32px;
     text-align: center;
-    color: white;
-    font-weight: bold;
-    text-wrap: wrap;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding: 2px 150px;
+    max-width: 100%; 
+    height: 100vh ; 
+  }
+  
+  h1 {
+    font-size: 70px;
+  }
+  
+  .item3, .item4, .item5, .item6, .item7 {  
+    width: 20vw; 
+  padding: 40px 5px;
+    text-align: center;
+  }
+  
+  .blank {  
+    width: 20vw; 
 }
+  
+  .item8 { 
+    max-width: 100%; 
+    height: auto; 
+  }
+  
+  .item9 , .item10, .item13  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
