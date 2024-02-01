@@ -11,6 +11,10 @@ body {
     overflow-x: hidden;
   }
   
+* {
+    box-sizing: border-box;
+}
+
 .navbar { 
     grid-area: header;
     position: sticky;
